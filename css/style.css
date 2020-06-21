@@ -11,7 +11,9 @@
 html,
 body {
 	height: 100%;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
+	letter-spacing:0.02em;
+	line-height:1.5;
 }
 
 h1,
@@ -22,12 +24,16 @@ h5,
 h6 {
 	color: #fff;
 	margin: 0;
-	font-weight: 600;
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-h2 {
+h1 {
 	font-size: 48px;
+	font-weight:bold;
+}
+
+h2 {
+	font-size:36px;
 }
 
 h3 {
@@ -143,7 +149,7 @@ ol {
 	margin-right: 10px;
 	border: 2px solid #212529;
 	color: #fff;
-	font-weight: 700;
+	font-weight: bold;
 }
 
 .site-btn:hover {
@@ -264,7 +270,6 @@ ol {
 .single-progress-item p {
 	color: #fff;
 	margin-bottom: 0;
-	font-weight: 600;
 }
 
 .progress-bar-style {
@@ -288,7 +293,7 @@ ol {
 	right: 0;
 	bottom: -30px;
 	color: #212529;
-	font-weight: 600;
+	font-weight: bold;
 }
 
 /* Progress dots */
@@ -342,10 +347,10 @@ ol {
 	color: #fff;
 }
 
-.social-links a {
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+.social-links a, .site-btn {
+	-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
 }
 
 /*---------------------
@@ -383,13 +388,13 @@ ol {
 	margin-bottom: 80px;
 }
 
-.hero-text h2 {
+.hero-text h1 {
 	font-size: 170px;
 	line-height: normal;
 	margin-bottom: 20px;
 }
 
-.hero-text p {
+.hero-text h3 {
 	font-size: 33px;
 	line-height: 1.3;
 }
@@ -542,7 +547,7 @@ ol {
 ==============================*/
 
 @media only screen and (max-width: 1600px) {
-	.hero-text h2 {
+	.hero-text h1 {
 		font-size: 120px;
 	}
 }
@@ -581,7 +586,7 @@ ol {
 		margin-right: 30px;
 		text-align: left;
 	}
-	.hero-text h2 {
+	.hero-text h1 {
 		font-size: 80px;
 	}
 	.resume-list {
@@ -603,7 +608,7 @@ ol {
 
 /* Small Mobile :320px. */
 @media only screen and (max-width: 479px) {
-	.hero-text h2 {
+	.hero-text h1 {
 		font-size: 50px;
 	}
 	.hero-info ul li {
